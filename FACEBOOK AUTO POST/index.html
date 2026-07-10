@@ -1,11 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8"
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>FACEBOOK AUTO POST</title>
+  <meta charset="UTF-8"> 
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>FACEBOOK AUTO POST</title>
+  
+  <style>
+    /* ล้างค่าขอบขาวของเบราว์เซอร์ และตั้งค่าให้เต็มจอ */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; /* ป้องกันไม่ให้หน้าเว็บหลักมีแถบเลื่อน ให้ไปเลื่อนใน iframe แทน */
+      background-color: #0f172a; /* ใส่สีพื้นหลังให้กลืนกับแอป */
+    }
+    
+    /* ตั้งค่า iframe ให้เต็ม 100% ของพื้นที่ */
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-    <iframe  scrolling="no"  src="https://script.google.com/macros/s/AKfycbyR6ZH49oUHG4INNggyjZscsP7aKBfZ0LVlhsLnFULDrx5SCkX9r3NZry1_Ez0bn_yzMw/exec" frameborder="0" style="height: 100vh;width: 100vw;position:fixed;"></iframe>
+    <iframe src="https://script.google.com/macros/s/AKfycbyR6ZH49oUHG4INNggyjZscsP7aKBfZ0LVlhsLnFULDrx5SCkX9r3NZry1_Ez0bn_yzMw/exec" allowfullscreen></iframe>
 </body>
 </html>
